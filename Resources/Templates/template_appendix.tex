@@ -1,0 +1,23 @@
+% The original template (from Trevor) had a custom \appendix command,
+% but I found it to break figure/table counters. I'm not sure how
+% reliable my fix is, so I ended up reverting back to the standard
+% latex version, and renaming the custom command to \myappendix.  You
+% can try both and see how things work out:
+% 1) Call \appendix once, and then make each appendix a \chapter
+% 2) Call \myappendix once, and then make each appendix a \section.
+
+%\appendix
+\chapter{Phase 1 Protocol}
+
+% Appendix sections, subsections etc should not appear in the table of 
+% contents. So set tocdepth to 0 and set it back to 2 at the end. Do 
+% this for each appendix.
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+Supplementary material goes here
+
+\section{SECTION NAME}
+
+
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}

@@ -1,0 +1,138 @@
+% This is an example using the \LaTeX{} template for UCI theses and
+% dissertation documents \cite{uci-thesis-latex}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Referencing                                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Figure \ref{fig:sourcecode} is just for illustration purposes, as is Table
+\ref{tab:coordinates}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Code/Verbatim                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\begin{verbatim}
+#include <iostream>
+int main(int argc, char** argv) {
+  std::cout << "Hello World." << std::endl;
+  return 0;
+}
+\end{verbatim}
+  \caption{Example source code.}
+  \label{fig:sourcecode}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Numeric Table                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}
+  \centering
+  \begin{tabular}{|rr|r|}
+    \hline
+    $x$ & $y$ & $z$ \\
+    \hline
+    14 & 12 & -2 \\
+    0 & 33 & -25 \\
+    -3 & 11 & 22 \\
+    4 & 4 & 6 \\
+    \hline
+  \end{tabular}
+  \caption{Example coordinates.}
+  \label{tab:coordinates}
+\end{table}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Figure/Quote                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  \begin{tabular}{l}
+    ``I am glad I was up so late,\\
+    \quad{}for that's the reason I was up so early.''\\
+    \em \footnotesize William Shakespeare (1564-1616), British
+    dramatist, poet.\\
+    \em \footnotesize Cloten, in Cymbeline, act 2, sc. 3, l. 33-4.
+  \end{tabular}
+  \caption{A deep quote.}
+  \label{fig:quote}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Text Table                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    1 & xyzxyz & xyzxyz \\
+    \hline
+    2 & xyzxyz & xyzxyz \\
+    \hline
+    3 & xyzxyz & xyzxyz \\
+    \hline
+    4 & xyzxyz & xyzxyz \\
+    \hline
+    5 & xyzxyz & xyzxyz \\
+    \hline
+    6 & xyzxyz & xyzxyz \\
+    \hline
+    7 & xyzxyz & xyzxyz \\
+    \hline
+    8 & xyzxyz & xyzxyz \\
+    \hline
+  \end{tabular}
+  \caption{Scenario 1 workflow instructions as given to participant.}
+  \label{tab:sample_table}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Long/Multi-page Table                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \begin{longtable}{|p{0.05\linewidth}|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \caption{Scenario 3 workflow instructions as given to participant.}\\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endfirsthead
+    \multicolumn{3}{c}%
+    {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \hline
+    \endlastfoot
+    1 & xyz & xyz\\
+    \hline
+    2 & xyz & xyz \\
+    \hline
+    3 & xyz & xyz \\
+    \hline
+    4  & xyz & xyz \\
+    \hline
+    5 & xyz & xyz \\
+    \hline
+    6 & xyz & xyz \\
+    \hline
+    \end{longtable}
+    \label{tab:sample_longtable}
+\end{center}
+
+%%% Local Variables: ***
+%%% mode: latex ***
+%%% TeX-master: "thesis.tex" ***
+%%% End: ***

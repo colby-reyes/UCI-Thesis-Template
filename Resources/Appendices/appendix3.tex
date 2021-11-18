@@ -1,0 +1,155 @@
+% The original template (from Trevor) had a custom \appendix command,
+% but I found it to break figure/table counters. I'm not sure how
+% reliable my fix is, so I ended up reverting back to the standard
+% latex version, and renaming the custom command to \myappendix.  You
+% can try both and see how things work out:
+% 1) Call \appendix once, and then make each appendix a \chapter
+% 2) Call \myappendix once, and then make each appendix a \section.
+
+%\appendix
+\chapter{Phase 3 Protocol: EMERSE Workflow Scenarios}
+
+% Appendix sections, subsections etc should not appear in the table of 
+% contents. So set tocdepth to 0 and set it back to 2 at the end. Do 
+% this for each appendix.
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\section{Overview}
+Following EMERSE’s initial installation and functional testing, we will identify 5 prospective users at each collaborating site to participate in additional usability studies to reveal potential issues that may arise from the sites’ local contexts. These users will be asked to review the user documentation, and then follow a structured test script to perform a set of simulated search tasks. They will then be asked to report their perceptions and experience with the system using the Questionnaire for User Interface Satisfaction (QUIS), a validated and widely used usability survey instrument (Appendix 2). They will also be asked to fill out a validated questionnaire instrument based on the technology acceptance model (Appendix 3), which assesses key determinants of technology acceptance behavior among prospective users. Each usability testing session, including the time needed to respond to the questionnaires, will last about an hour. No identifying information will be collected.
+\subsubsection{Recruitment}
+The 5 prospective users at each collaborating site will be identified and recruited by the site PIs. These participants are usually clinician scientists, clinical research coordinators, or healthcare administrators, who frequently perform medical chart review tasks that can be facilitated by the use of the EMERSE system.
+
+\section{Protocol}
+\subsection{Background}
+\begin{quote}
+    You will be using a test system that contains 10,000 simulated patients and about 500,000 simulated clinical documents. All names, dates, documents, etc. are fake. A small handful of scanned documents are real but have been donated for use and have had all identifiers removed. 
+\end{quote}
+\subsubsection{Details}
+\begin{quote}
+    You will be given three short scenarios to work through to familiarize yourself with the EMERSE system. You do not need to have prior experience with using EMERSE in order to complete these scenarios. Please follow the instructions in the order in which they are listed. The main task you are being asked to do is show in the Instructions column. Additional details to help understand what to do or the context for how EMERSE works can be found in the Explanation column. After you have worked through a scenario, feel free to try out other aspects/features of the system in any way you’d like--there is nothing you can “break”. The three scenarios appear on the following pages.
+\end{quote}
+
+\subsection{Scenario 1}
+\begin{center}
+    \begin{longtable}{|p{0.05\linewidth}|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \caption{Scenario 1 workflow instructions as given to participant.}\\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endfirsthead
+    \multicolumn{3}{c}%
+    {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \hline
+    \endlastfoot
+   1 & Login & You will be given the URL, username, and password to use for logging in. \\
+    \hline
+    2 & Attest to the use case \textit{Quality Improvement} & An attestation is a way to record why you are using EMERSE for the particular session. \\
+    \hline
+    3 & Enter the search term “seizures” and then use the \textit{Find Patients} option to search across \textit{All Local Patients} in the system & \textit{Find Patients} will identify a set of patients that contain the term. You can apply the \textit{Find Patients} function to an existing list of patients or to \textit{All Local Patients} in the system. The default after logging in is that \textit{All Local Patients} are automatically selected unless you change it. The word \textit{Local} is used because a new \textit{Network} feature will be coming out where you will be able to get a count of patients from other medical centers. Also note that EMERSE is very literal, so you if you search for “seizures” (with an “s” at the end) it will only find that specific variation.  There are options to include other variations, which will come up later. \\
+    \hline
+    4 & Determine how many patients mention the word “seizures” & You should see that there are 1,994 patients. \\
+    \hline
+    5 & Examine the list of 1,994 retrieved patients in more detail by moving it to a \textit{Temporary Patient List} & A \textit{Temporary Patient List} is a list of patients that is not saved between sessions. It is good for doing a quick review but where you should not be saving the results (such a “review preparatory to research”). \textit{Temporary Patient Lists} can be converted to \textit{Saved Patient Lists} when desired. \\
+    \hline
+    6 & Assume that the first three patients are not relevant, so remove them from the list & This is done by clicking on the \textit{Remove} link in the table for each patient. \\
+    \hline
+    7 & Use the \textit{Highlight Documents} option to see what it says about Heidi Kent in terms of where “seizures” is mentioned in the \texttt{Main EHR} category & Click on the \textit{Highlight Documents} button towards the upper left of the screen.  Heidi Kent should be the 6th patient down from the top. Click where it says “1 of 16” for her row and the \texttt{Main EHR} column. This means that 1 out of 16 documents mentions seizures. You can click again on the row with the snippet that mentions “seizures” to see the term in the context of the full document. \\
+    \hline
+    8 & Look to see the context of the term “seizures” in Heidi Kent’s radiology reports & This can be done simply by switching over to the \texttt{Radiology} tab. \\
+    \hline
+    \end{longtable}
+    \label{tab:scenario_1}
+\end{center}
+
+\subsection{Scenario 2}
+\begin{center}
+    \begin{longtable}{|p{0.05\linewidth}|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \caption{Scenario 2 workflow instructions as given to participant.}\\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endfirsthead
+    \multicolumn{3}{c}%
+    {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \hline
+    \endlastfoot
+    1 & Remove the “seizures” search term & Navigate back to \textit{Terms} by clicking on the \textit{Terms} button (upper left). A term can be removed several ways.  One way is to click on the pencil icon and then click on \textit{Remove}  \\
+    \hline
+    2 & Add the term “carpal tunnel syndrome” & You do not need to add double quotes around the phrase since multiple words in one row will be considered to be a quoted phrase (quotes will be added automatically). \\
+    \hline
+    3 & Use the \textit{Synonyms} feature to include all of the other possible terms \textbf{except} for the term “cts” & Click on the “Synonyms” button next to the phrase “carpal tunnel syndrome”.  To de-select the term “cts” click on it once.  It should turn gray with a line through it. The other terms still highlighted in yellow will be added. Then click on the \textit{Add Highlighted Terms} button.  \\
+    \hline
+    4 & Set the patients back to \textit{All Local Patients} & Click on the \textit{Patients} button and then the \textit{All Local Patients} tab/header, and then select the Checkbox in the row in the table that says “All patients in the EMERSE system” \\
+    \hline
+    5 & Use the \textit{Find Patients} feature to find patients that contain any of the terms related to “carpal tunnel syndrome” or the variations that were added. & When searching across \textit{All Local Patients}, EMERSE treats terms with the same color as being separated by “OR” and terms with different colors to be separated by “AND”. In this case, since the terms added were synonyms of “carpal tunnel syndrome” the system added them as the same color. The final result should be 164 patients.  \\
+    \hline
+    6 & Move the patients to a \textit{Temporary Patient List} &  \\
+    \hline
+    7 & Convert the patient list to a \textit{Saved Patient List}. Give it the name “Carpal Tunnel” and give it the Description “EMERSE testing”. & A \textit{Saved Patient List} can be shared with other users on your team and also supports \textit{Comments} and \textit{Tags}. A \textit{Comment} is a brief note that you can make about the patient, and a \textit{Tag} is a checkbox for the patient that you can use in any way you want. For example, you might want to Tag patients eligible for a study or that you have further questions about. \\
+    \hline
+    8 & Go back to the \textit{Terms} and \textit{Clear All Terms} & Navigate to \textit{Terms}, then click on \textit{Clear/Delete}, then click on \textit{Clear All Terms} \\
+    \hline
+    9 & Add in a new term “tingling” & Navigate to \textit{Manage Terms} and then add the new term. \\
+    \hline
+    10 & Use the \textit{Highlight Documents} feature to find where “tingling” appears in the patient notes &  \\
+    \hline
+    11 & Add or remove \textit{Tags} for some of the patients. & This \textit{Patient List} is shared with multiple users who all can all change the status of \textit{Tags}. \\
+    \hline
+    12 & Add/edit \textit{Comments} for some of the patients. & Similar to the \textit{Tags} this \textit{Patient List} is being shared with multiple users, so you may see comments from them as well. \textit{Comments} are saved automatically once you click out of the text box.) \\
+    \end{longtable}
+    \label{tab:scenario_2}
+\end{center}
+
+\subsection{Scenario 3}
+\begin{center}
+    \begin{longtable}{|p{0.05\linewidth}|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \caption{Scenario 3 workflow instructions as given to participant.}\\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endfirsthead
+    \multicolumn{3}{c}%
+    {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \hline
+    \endlastfoot
+    1 & Select a \textit{Saved Patient List} that has been shared to you called “EMERSE Shared List” & Navigate to \textit{Saved Patient Lists} and find the list with the name “EMERSE Shared List” in the table.  Click on it to select it. The list should contain 50 patients. \\
+    \hline
+    2 & Select a \textit{Term Bundle (Saved Terms)} called “EMERSE Testing Bundle 1” & Navigate to \textit{Terms} and then \textit{Saved Terms}. Then choose the radio button labeled \textit{All Available}. Click on the row with the name “EMERSE Testing Bundle 1”.  This should select the list of terms which should now be displayed near the top of the screen, next to word \textit{Terms}. \\
+    \hline
+    3 & View the Overview of the patients by clicking on the \textit{Highlight Documents} button.  & This should show you the high level \textit{Overview} of which documents had the term(s) of interest. Some of the cells in the \textit{Overview} should have numbers in them, like “1 of 14”, which means that 1 document out of 14 had a term of interest. \\
+    \hline
+    4 & Click on the \textit{Mosaic} icon which is above and on the right side of the \textit{Overview} table. & This should switch to a view where each of the colored terms appears as a color in the table, allowing you to identify which term(s) are present just by their colors. \\
+    \hline
+    5 & Locate the patient that has the terms “coronary artery disease” (blue) and “triglycerides” (red) appearing in their \textit{Radiology Notes} and click on that cell. & This should be for patient “Brielle Kelley” and by clicking you should be able to identify two notes, one with the term “triglycerides” and another with the term “coronary artery disease”. \\
+    \hline
+    6 & Logout of the system & Click on your username in the upper right to access the menu and choose Logout. \\
+    \hline
+    \end{longtable}
+    \label{tab:scenario_3}
+\end{center}
+
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}

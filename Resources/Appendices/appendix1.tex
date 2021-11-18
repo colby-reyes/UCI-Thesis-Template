@@ -1,0 +1,50 @@
+% The original template (from Trevor) had a custom \appendix command,
+% but I found it to break figure/table counters. I'm not sure how
+% reliable my fix is, so I ended up reverting back to the standard
+% latex version, and renaming the custom command to \myappendix.  You
+% can try both and see how things work out:
+% 1) Call \appendix once, and then make each appendix a \chapter
+% 2) Call \myappendix once, and then make each appendix a \section.
+
+%\appendix
+\chapter{Example Appendix}
+
+% Appendix sections, subsections etc should not appear in the table of 
+% contents. So set tocdepth to 0 and set it back to 2 at the end. Do 
+% this for each appendix.
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+\section{Example of Full Interviews Protocol}
+\label{sec:interview_protocol}
+\begin{enumerate}
+    \item What is your role at your institution?
+    \item lipsum[1]
+    \item lipsum[2]
+    \item lipsum[3]
+        \textit{If yes, can you please describe:}
+        \begin{enumerate}
+            \item lipsum[4]
+            \item lipsum[5]
+        \end{enumerate}
+    \item Do you have any NLP capability at our institution and if so, how do you compare it to EMERSE?
+    \item What is the current status of EMERSE implementation supported through this NCI project?
+    \item To date, what is the most challenging aspect for implementing EMERSE at your institution?\\
+        \textbf{Probing Questions}
+        \begin{enumerate}
+            \item Were there things that you feel you should have been done or done better to make the implementation a smoother process?
+            \item Were there things that you feel the Michigan team should have done or done better to make the implementation a smoother process?
+            \item Were there critical resources that should have be made available yet were not?
+            \item Besides what you mentioned above, are there other challenges that you have run into, or anticipate you will run into, when implementing EMERSE at your institution?
+        \end{enumerate}
+    \item Were there things that you feel you did right which facilitated the implementation?
+    \item Were there things that you feel the Michigan team did right which facilitated the implementation?
+    \item If EMERSE has been rolled out to end users at your institution: what is the general feedback you have received from them about the system?
+    \item What challenges do you foresee with maintaining and supporting EMERSE in longer term?
+    \item Can you compare the EMERSE implementation to your implementation experience of other vendor products or open-source tools?
+    \item Anything else you want to tell us?
+\end{enumerate}
+
+\section{Technical Documentation}
+As this portion of the interview addresses some technical aspects of the implementation of the EMERSE system, technical documentation may be of interest to some. This documentation provides information on the system requirements for an installation of the EMERSE software as well as associated support systems and institutional and IT processes to facilitate implementation. Technical documentation can be viewed on the  \hyperlink{https://project-emerse.org/documentation/index.html}{EMERSE Documentation website}\cite{emerse_documentation}.
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
