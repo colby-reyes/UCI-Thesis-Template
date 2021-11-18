@@ -7,130 +7,69 @@
 % 2) Call \myappendix once, and then make each appendix a \section.
 
 %\appendix
-\chapter{Phase 2 Protocol: Semi-Structured Interview}
+\chapter{Example Tables}
 
 % Appendix sections, subsections etc should not appear in the table of 
 % contents. So set tocdepth to 0 and set it back to 2 at the end. Do 
 % this for each appendix.
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
-\section{Overview}
-At baseline, the study will interview 20 veteran EMERSE users at the University of Michigan who have been using the system as a routine part of their job. These interviews will be semi-structured, and will include questions informed by technology acceptance theories. The purpose is to solicit feedback about the system’s usefulness and ease of use, and to identify usability issues that may not be apparent to the development team. The interview protocol can be found in Appendix 1. Each interview will last 45 minutes to an hour; all will be conducted in private settings. Upon the participant’s consent, the interview will be tape-recorded, and transcribed to facilitate subsequent qualitative analyses. No identifying information will be collected during the interviews. Any potential identifying information accidentally disclosed will be removed from the transcript. The audio tapes will be destroyed once they are transcribed.
-\subsubsection{Recruitment}
-The 20 veteran EMERSE users at the University of Michigan will be identified and recruited by the PI of the larger NCI-funded project, Dr. David Hanauer. These participants will be engaged users who have contributed to the development, testing, and evaluation of the EMERSE system in the past.
-\subsubsection{Purpose}
-To solicit feedback about EMERSE’s usefulness and ease of use, and to identify usability issues that may not be apparent to the development team. 
+\section{Standard Table}
+\label{sec:table_examples}
+\begin{table}
+  \centering
+  \begin{tabular}{|rr|r|}
+    \hline
+    $x$ & $y$ & $z$ \\
+    \hline
+    14 & 12 & -2 \\
+    0 & 33 & -25 \\
+    -3 & 11 & 22 \\
+    4 & 4 & 6 \\
+    \hline
+  \end{tabular}
+  \caption{Example table of coordinates.}
+  \label{tab:coordinates}
+\end{table}
 
-
-\section{Interview Protocol}
-\subsection{General Instructions}
-Avoid asking for information that would uniquely identify the interviewee.\\
-A question may be skipped if the interviewee has adequately addressed it in an earlier part of the conversation.\\
-A probing question may be skipped if the interviewee has adequately addressed it in an earlier part of the conversation. 
-
-\subsection{Introduction}
-\textbf{Purpose:} To introduce the study.\\
-\textbf{Suggested time:} 3 minutes
-\begin{enumerate}
-    \item Introduce yourself.
-    \item Introduce the study:
-        \begin{verbatim}
-    "Thanks for your continued support of EMERSE. As you know, 
-    the objective of this interview is to better understand issues 
-    that you may have encountered when using EMERSE in your work, 
-    in order to further improve the system.
-    This interview will take approximately 30 to 45 minutes. Your 
-    participation and your responses will be treated confidentially. 
-    All of our findings will be reported anonymously. Nothing that 
-    you say will be traceable to you as an individual. We greatly 
-    appreciate a recording of this interview for analysis purposes."
-        \end{verbatim}
-    \item Hand out Informed Consent.
-    \item Answer any question the participant may have about the Informed Consent, and then have the participant sign it.
-\end{enumerate}
-
-
-\subsection{Descriptive \& Background Questions}
-\textbf{Purpose:} Warm up questions to gather general facts about the interviewee and the work environment.\\
-\textbf{Suggested time:} 5 minutes
-\begin{verbatim}
-    "I’d like to start with some questions about your position
-    here and your general work setting."
-\end{verbatim}
-\begin{enumerate}
-    \item What’s your job role? (Q1)\\
-        \textit{Note: While we have this information already, the goal of this question is to warm the participant up.}\\
-        \textbf{Probing questions}
-            \begin{enumerate}
-                \item What is your job title?
-                \item What are your main job responsibilities?
-                \item What kind of medical data do you frequently work with?
-            \end{enumerate}
-    \item How long have you been working in this capacity? (Q2)
-        \textit{No probing questions. Let the participant speak.}
-\end{enumerate}
-
-
-
-
-\subsection{EMERSE Questions}
-\textbf{Purpose:} Questions to gather specific information about health IT’s impact on workflow.\\
-\textbf{Suggested time:} 20–30 minutes
-\begin{enumerate}
-    \item How long have you been an EMERSE user? (Q3)\\
-        \textit{No probing questions. Let the participant speak.}
-    \item How often do you use the system? (Q4)\\
-        \textit{No probing questions. Let the participant speak.\\
-        Do not define time framing for the participant (e.g. how many times a day, a month). Let the participant decide how to report frequency.}
-    \item How did you discover the system? (Q5)\\
-        \textbf{Probing questions}
-            \begin{enumerate}
-                \item How did you retrieve information from electronic health records before you discovered EMERSE?
-                \item How was the experience like, i.e., retrieving information from electronic health records without the assistance of EMERSE?
-            \end{enumerate}
-    \item In your current or previous work, have you used any other systems to help with retrieving information from electronic health records? (Q6)\\
-        \textbf{Probing questions}
-            \begin{enumerate}
-                \item If so, names of these systems and how do they compare to EMERSE
-                \item Overall impression about these systems, in comparison with EMERSE
-            \end{enumerate}
-    \item In general, how do you like EMERSE? (Q7) \\
-        \textit{No probing questions. Let the participant speak.}
-    \item What are things that you do not like about EMERSE? (Q8) \\
-        \textit{No probing questions. Let the participant speak.}
-    \item If we have a magic wand to change EMERSE any way we want, what would the first thing coming into your mind that should be changed? (Q9) \\
-        \textbf{Probing questions}
-            \begin{enumerate}
-                \item Rationale for the change
-                \item What would the ideal system look like after the change is made?
-            \end{enumerate}
-    \item Would you recommend EMERSE to other people who do similar work as yours? (Q10) \\
-        \textit{No probing questions. Let the participant speak.}
-\end{enumerate}
-
-\subsection{Additional Questions}
-\textbf{Purpose:} Questions to gather additional feedback.\\
-\textbf{Suggested time:} 5–10 minutes
-\begin{enumerate}
-    \item When you run into a problem using EMERSE, who do you go to for help? (Q11) \\
-        \textit{No probing questions. If possible, ask the participant to provide specific names.}
-    \item Overall, what do you think about the support you have received by the EMERSE team? (Q12) \\
-        \textit{No probing questions. Let the participant speak.}
-\end{enumerate}
-
-\subsection{Section 5: Wrap-Up}
-\textbf{Purpose:} To collect additional information that the participant may want to provide. \\
-\textbf{Suggested time:} 5 minutes
-\begin{enumerate}
-    \item Is there anything else that you’d like to share with us regarding your experience with using EMERSE? (Q13)\\
-        \textit{No probing questions. Let the participant speak.}
-\end{enumerate}
-
-\begin{verbatim}
-"Thank you very much for taking the time to participate in the
-study. We appreciate it much your time and your help."
-\end{verbatim}
-
+\section{Long (multi-page) Table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Long/Multi-page Table                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \begin{longtable}{|p{0.05\linewidth}|p{0.35\linewidth}|p{0.55\linewidth}|}
+    \caption{Scenario 3 workflow instructions as given to participant.}\\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endfirsthead
+    \multicolumn{3}{c}%
+    {\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+    \hline
+    \textbf{Step} & \textbf{Instructions} & \textbf{Explanation} \\
+    \hline
+    \hline
+    \endhead
+    \hline \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    \hline
+    \endlastfoot
+    1 & xyz & xyz\\
+    \hline
+    2 & xyz & xyz \\
+    \hline
+    3 & xyz & xyz \\
+    \hline
+    4  & xyz & xyz \\
+    \hline
+    5 & xyz & xyz \\
+    \hline
+    6 & xyz & xyz \\
+    \hline
+    \end{longtable}
+    \label{tab:sample_longtable}
+\end{center}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 

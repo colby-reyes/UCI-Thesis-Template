@@ -1,23 +1,30 @@
-% The original template (from Trevor) had a custom \appendix command,
-% but I found it to break figure/table counters. I'm not sure how
-% reliable my fix is, so I ended up reverting back to the standard
-% latex version, and renaming the custom command to \myappendix.  You
-% can try both and see how things work out:
+% This is a sample appendix file to refer to after you replace the information in Appendix A with your own text
+% Previous versions of this template note the options to use the custom command \myappendix or the built-in latex command \appendix. You can try both and see how things work out:
 % 1) Call \appendix once, and then make each appendix a \chapter
 % 2) Call \myappendix once, and then make each appendix a \section.
+% However, I have found it to work better to just leave both commented out
 
 %\appendix
-\chapter{Phase 1 Protocol}
+\chapter{Example Appendix}
 
 % Appendix sections, subsections etc should not appear in the table of 
 % contents. So set tocdepth to 0 and set it back to 2 at the end. Do 
 % this for each appendix.
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
-Supplementary material goes here
-
-\section{SECTION NAME}
-
-
+\section{Example of Full Interviews Protocol}
+\label{sec:interview_protocol}
+\begin{enumerate}
+    \item What is your role at your institution?
+    \item Another question here
+    \item Another question here
+    \item Another question here
+        \textit{If yes, can you please describe:}
+        \begin{enumerate}
+            \item Follow-up question or sub-item here
+            \item Follow-up question or sub-item here
+        \end{enumerate}
+    \item Another question or protocol line item
+\end{enumerate}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
